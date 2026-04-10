@@ -1,0 +1,17 @@
+{
+  "name": "ai-blockchain-bi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:blockchain": "cd blockchain && npx hardhat node",
+    "start:deploy": "wait-on http://127.0.0.1:8545 && cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "start:backend": "cd backend && npm run dev",
+    "start:ai": "echo 'AI Integration has been migrated to Node.js backend services.'",
+    "start:frontend": "cd frontend && npm run dev",
+    "start-all": "concurrently --kill-others -n \"ETH,DEPLOY,API,WEB\" -c \"cyan,blue,yellow,green\" \"npm run start:blockchain\" \"npm run start:deploy\" \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0"
+  }
+}

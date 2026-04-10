@@ -1,0 +1,6 @@
+Date,revenue,Products,CustomerType
+2026-01-01,1500.50,Nexus-X,Premium
+2026-01-02,2300,Nexus-Y,Standard
+2026-01-03,invalid_data,Nexus-Z,Premium
+2026-01-04,1200.75,Nexus-X,Standard
+2026-01-05,5000.00,Nexus-W,Enterprise
