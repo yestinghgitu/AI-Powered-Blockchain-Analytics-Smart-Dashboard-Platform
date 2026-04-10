@@ -1,30 +1,34 @@
-# AI-Powered Blockchain Analytics Platform
+# AI-Powered Blockchain Analytics & Smart Dashboard Platform
 
-An enterprise-grade, real-time intelligence dashboard integrating AI-driven forecasting with Solana blockchain integrity verification.
+Enterprise-grade, real-time intelligence dashboard integrating AI-driven forecasting with Solana blockchain integrity verification.
 
-## 🚀 Architecture Overview
+## 🚀 Overview
+
+A full-stack AI + Web3 platform that provides real-time business analytics, predictive insights, and blockchain integration using Solana.
+
+## ✨ Key Features
+
+- **Secure Admin Authentication**: JWT-based with administrative RBAC and bcrypt hashing.
+- **Real-time Analytics Dashboard**: High-fidelity visualizations with Lucide React and Framer Motion.
+- **AI Sales Forecasting**: Predictive insights and anomaly detection via a custom microservice.
+- **Solana Integration**: Phantom wallet connectivity and on-chain data anchoring for tamper-proof records.
+- **CSV Data Pipeline**: Efficient processing and verification of uploaded datasets.
+
+## 🏗️ Architecture
 
 This project is structured as a monorepo containing the following core services:
 
-- **`/frontend`**: React (Vite) dashboard with high-fidelity visualizations, Framer Motion animations, and Phantom wallet integration.
-- **`/backend`**: Node.js/Express API serving as the neural core, managing user sessions (JWT), and orchestrating data flows.
-- **`/blockchain`**: Solana smart contracts (programs) and scripts for on-chain data anchoring and integrity proofing.
-- **`/ai-service`**: Python-based AI microservice for advanced time-series forecasting, anomaly detection, and risk profiling.
+- **`/frontend`**: React (Vite) dashboard.
+- **`/backend`**: Node.js/Express API (the neural core).
+- **`/blockchain`**: Solana smart contracts and scripts.
+- **`/ai-service`**: Python-based AI microservice.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, TypeScript, Tailwind CSS, Lucide React, Framer Motion, Zustand.
-- **Backend**: Node.js, Express, MongoDB, Mongoose, JWT.
+- **Frontend**: React, TypeScript, Tailwind CSS, Zustand.
+- **Backend**: Node.js, Express, MongoDB, Mongoose.
 - **Blockchain**: Solana, Anchor, Web3.js, Rust.
-- **AI/ML**: Python, Pandas, Scikit-learn, FastAPI.
-
-## 📋 Prerequisites
-
-- Node.js (v18+)
-- Python (v3.9+)
-- MongoDB (Running locally or via Atlas)
-- Solana Tool Suite (for blockchain development)
-- Phantom Wallet Extension
+- **AI/ML**: Python, Pandas, FastAPI.
 
 ## 🚦 Getting Started
 
